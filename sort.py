@@ -1,29 +1,28 @@
-# from stanfordcorenlp import StanfordCoreNLP
-# from newspaper import Article
+from stanfordcorenlp import StanfordCoreNLP
+from newspaper import Article
 import json
 
 
 def churn(url):
-    # article = Article(url)
-    # article.download()
-    # article.parse()
-    # sentence = article.text
-    # nlp = StanfordCoreNLP('http://localhost', port=9000)
-    # output = nlp.annotate(sentence)
-    # nlp.close()
-    output = url
+    article = Article(url)
+    article.download()
+    article.parse()
+    sentence = article.text
+    nlp = StanfordCoreNLP('http://localhost', port=9000)
+    output = nlp.annotate(sentence)
+    nlp.close()
     return output
 
 
 def ner():
-    output_file = 'C:\\Users\sagar.sanjeev\PycharmProjects\Pandas\sorted_output.json'
-    input = open('C:\\Users\sagar.sanjeev\PycharmProjects\Pandas\\News.txt', 'r').read()
+    output_file = '/home/rockerzsag24/Ready/1.txt'
+    input = open('/home/rockerzsag24/Ready/Data/1.txt', 'r').read()
     input = input.replace('\t', '\n')
     input = input.split('News')
     input = list(map(lambda s: s.strip(), input))
     i = 0
     for article in input:
-        output_file = 'C:\\Users\sagar.sanjeev\PycharmProjects\Pandas\\News_' + str(i) + '.json'
+        output_file = '/home/rockerzsag24/Ready/Data/News_' + str(i) + '.json'
         if article:
             try:
                 article_triplet = article.split(' ', 1)
