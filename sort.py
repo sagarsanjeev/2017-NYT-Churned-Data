@@ -16,13 +16,13 @@ def churn(url):
 
 def ner():
     output_file = '/home/rockerzsag24/Ready/1.txt'
-    input = open('/home/rockerzsag24/Ready/Data/1.txt', 'r').read()
+    input = open('/home/rockerzsag24/Ready/Data/2.txt', 'r').read()
     input = input.replace('\t', '\n')
     input = input.split('News')
     input = list(map(lambda s: s.strip(), input))
-    i = 0
+    i = 1001
     for article in input:
-        output_file = '/home/rockerzsag24/Ready/1/News_' + str(i) + '.json'
+        output_file = '/home/rockerzsag24/Ready/2/News_' + str(i) + '.json'
         if article:
             try:
                 article_triplet = article.split(' ', 1)
