@@ -22,7 +22,7 @@ def ner():
     input = list(map(lambda s: s.strip(), input))
     i = 0
     for article in input:
-        output_file = '/home/rockerzsag24/Ready/Data/News_' + str(i) + '.json'
+        output_file = '/home/rockerzsag24/Ready/1/News_' + str(i) + '.json'
         if article:
             try:
                 article_triplet = article.split(' ', 1)
