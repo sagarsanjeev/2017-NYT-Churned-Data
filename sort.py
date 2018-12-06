@@ -37,8 +37,12 @@ def ner():
                 pass
             try:
                 with open(output_file, 'w') as f1:
-                    json.dump(output, f1, ensure_ascii=False)
-                    json.dump(article_triplet[0], f1, ensure_ascii=False)
+                    #json.dump(output, f1, ensure_ascii=False)
+                    #json.dump(article_triplet[0], f1, ensure_ascii=False)
+                    js = {"link": article_triplet[0]}
+                    js["data"] = output
+                    js = json.dumps(js)
+                    json.dump(js, f1, ensure_ascii=False)
                     # f1.write('SNOOPER_URL=' + article_triplet[0]+'\n')
                     # f1.write(output)
                     # f1.write('\n')
