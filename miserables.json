@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "size": 10,
+	  "color":"green",
+	  "risk":"0.2"
+    },
+    {
+      "id": "B",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "C",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "D",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "E",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "F",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "G,
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "H",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "I",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "J",
+      "size": 10,
+	  "color":"green"
+    },
+    {
+      "id": "K",
+      "size": 10,
+	  "color":"green"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "linkName":"$10,000 on 24/07/2009",
+	  "type": "licensing"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "linkName":"$450,000 on 23/07/2009",
+	  "type": "licensing"
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "linkName":"$300,000 on 27/07/2009",
+	  "type": "licensing"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "linkName":"$200,000 on 24/07/2009",
+	  "type": "licensing"
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "linkName":"$450,000 on 28/07/2009",
+	  "type": "licensing"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "linkName":"is also believed to have aided",
+	  "type": "resolved"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "linkName":"is wife of",
+	  "type": "linkedentity"
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "linkName":"has vested interest in",
+	  "type": "linkedentity"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "linkName":"is a director of",
+	  "type": "linkedentity"
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "linkName":"is a director of",
+	  "type": "linkedentity"
+    }
+  ]
+}
